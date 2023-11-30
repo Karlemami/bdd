@@ -1,6 +1,6 @@
 # Infos à remplir manuellement dans la table
 
-### Dans la table `employes`
+## Dans la table `employes`
 
 1. **Le coupable** : Nom = Coupable; Prenom = ??; Fonction = Ingenieur TAL; salaire = 2000e, peu pour un ingenieur; date_embauche = qlq annees
 
@@ -17,17 +17,41 @@
 -> Je pense que peu importent les noms et les salaires a moins qu'on fasse des jeux de mots. Pour les postes l'idee est de varier un peu.
 Faire attention a ce que seulement les employes qu'on cherche finissent par sortir.
 
-### Dans la table `conges_2023`
+## Dans la table `conges_2023`
 
 pour l'ID du coupable : vacances PILE le jour du crime (**jour du crime a definir**)
 
 Les employes du dessus **ne sont pas** en vacances le jour du crime.
 
-### Dans la table `mails`
+## Dans la table `augmentation`
+
+Certains employes n'ont pas ete augmentes : on retrouve les employes de notre groupe.
+
+## Dans la table `projets`
+
+Generer une liste de projets pris en charge par l'entreprise.
+
+Voici ce qu'a sorti chatGPT :
+
+- *Projet LinguaSync* : Projet de LLM visant à améliorer la compréhension contextuelle dans les interactions langagières automatisées. = **NOTRE PROJET DE LLM**
+
+- *Projet TitanAI* : Développement d'une intelligence artificielle pour optimiser les processus de gestion des ressources humaines.
+
+- *Projet QuantumVision* : Création d'un système de vision par ordinateur avancé pour améliorer la reconnaissance d'objets dans des environnements complexes.
+
+- *Projet DataHarmony* : Mise en œuvre d'une plateforme de gestion de données centralisée pour améliorer l'efficacité des analyses de données à grande échelle.
+
+- *Projet SmartGrid* : Développement d'un système intelligent de gestion des réseaux électriques pour une utilisation plus efficace de l'énergie.
+
+- *Projet Cybershield* : Création d'un système de cybersécurité avancé basé sur l'intelligence artificielle pour protéger les données sensibles de l'entreprise.
+
+On peut faire une table projets qui contient **id_projet, nom projet, date de debut, date de fin prevue, id chef de projet**. Et il faudrait rajouter une colonne "id projet" dans la table employes pour specifier sur quel projet ils travaillent.
+
+## Dans la table `mails`
 
 Repartir differents mails entre les employes. On peut faire ca un peu aleatoirement tant que les IDs correspondent.
 
-Mails d'insultes :
+#### Mails d'insultes :
 
 **Mail 1 :**
 >
@@ -133,9 +157,9 @@ Mails d'insultes :
 
 Il faudra rajouter quelques insultes dans les mails.
 
-Les mails qui les font paraitre suspects :
+#### Les mails qui les font paraitre suspects :
 
-**Mail 10:**
+**Mail 1:**
 
 >Objet : Planification de l'Alibi
 >
@@ -146,7 +170,7 @@ Les mails qui les font paraitre suspects :
 >À prévoir,
 >[Ton Prénom]
 
-**Mail 11:**
+**Mail 2:**
 
 >Objet : Éviter les Registres
 >
@@ -158,7 +182,7 @@ Les mails qui les font paraitre suspects :
 >[Ton Prénom]
 
 
-**Mail 12:**
+**Mail 3:**
 
 >Objet : Effacer les Traces
 >
@@ -168,3 +192,10 @@ Les mails qui les font paraitre suspects :
 >
 >À effacer les traces,
 >[Ton Prénom]
+
+
+## Dans la table `badge`
+
+On voit que le groupe d'employes etait a l'exterieur pendant le crime.
+
+A mettre en relation avec la table `videosurveillance` : les employes etaient dehors en pause clope, donc cela mene nulle part.
