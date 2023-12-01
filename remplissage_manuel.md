@@ -6,13 +6,13 @@
 
 #### Groupe d'employes participant au projet
 
-2. **Employe 1** : Nom = ?; Prenom = ?; Fonction = Chef de projet; salaire = 6000
-3. **Employe 2** : Nom = ?; Prenom = ?; Fonction = Developpeur; salaire = 3000
-4. **Employe 3** : Nom = ?; Prenom = ?; Fonction = Ingenieur TAL; salaire = 3500
-5. **Employe 4** : Nom = ?; Prenom = ?; Fonction = Developpeur; salaire = 3000
-6. **Employe 5** : Nom = ?; Prenom = ?; Fonction = Expert en ML; salaire = 3000
-7. **Employe 6** : Nom = ?; Prenom = ?; Fonction = Data Scientist; salaire = 3000
-8. **Employe 7** : Nom = ?; Prenom = ?; Fonction = Expert en ML; salaire = 3000
+2. **Employe 1** : Nom = ?; Prenom = ?; Fonction = Chef de projet; salaire = 9000
+3. **Employe 2** : Nom = ?; Prenom = ?; Fonction = Developpeur; salaire = 5000
+4. **Employe 3** : Nom = ?; Prenom = ?; Fonction = Ingenieur TAL; salaire = 6500
+5. **Employe 4** : Nom = ?; Prenom = ?; Fonction = Developpeur; salaire = 4000
+6. **Employe 5** : Nom = ?; Prenom = ?; Fonction = Expert en ML; salaire = 7000
+7. **Employe 6** : Nom = ?; Prenom = ?; Fonction = Data Scientist; salaire = 8000
+8. **Employe 7** : Nom = ?; Prenom = ?; Fonction = Expert en ML; salaire = 6500
 
 -> Je pense que peu importent les noms et les salaires a moins qu'on fasse des jeux de mots. Pour les postes l'idee est de varier un peu.
 Faire attention a ce que seulement les employes qu'on cherche finissent par sortir.
@@ -33,11 +33,12 @@ Generer une liste de projets pris en charge par l'entreprise.
 
 Voici ce qu'a sorti chatGPT :
 
-- *Projet LinguaSync* : Projet de LLM visant à améliorer la compréhension contextuelle dans les interactions langagières automatisées. = **NOTRE PROJET DE LLM**
 
-- *Projet TitanAI* : Développement d'une intelligence artificielle pour optimiser les processus de gestion des ressources humaines.
+- *Projet LinguaSync* : Développement d'une intelligence artificielle pour optimiser les processus de gestion des ressources humaines.
 
 - *Projet QuantumVision* : Création d'un système de vision par ordinateur avancé pour améliorer la reconnaissance d'objets dans des environnements complexes.
+
+- *Projet TitanIA* : Projet de LLM visant à élaborer une IA travailleuse qui maîtrise le développement d'applications et de LLM. = **NOTRE PROJET DE LLM**
 
 - *Projet DataHarmony* : Mise en œuvre d'une plateforme de gestion de données centralisée pour améliorer l'efficacité des analyses de données à grande échelle.
 
