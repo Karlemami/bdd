@@ -15,18 +15,27 @@ def recréation_db():
     c.execute("DROP TABLE IF EXISTS congés_2023")
     c.execute("DROP TABLE IF EXISTS badges_2023")
     c.execute("DROP TABLE IF EXISTS projets")
+    c.execute("DROP TABLE IF EXISTS reconnaissance_caméras_2023_04_01")
     conn.commit()
 
     c.execute("""
+    CREATE TABLE reconnaissance_caméras_2023_04_01 (
+        id_employé INTEGER,
+        heure VARCHAR,
+        lieu VARCHAR,
+        action VARCHAR,
+        FOREIGN KEY (id_employé) REFERENCES employés(id)
+    )""")
+    c.execute("""
     CREATE TABLE employés (
-    id INTEGER PRIMARY KEY,
-    nom VARCHAR,
-    prénom VARCHAR,
-    fonction VARCHAR,
-    salaire INTEGER,
-    date_embauche VARCHAR,
-    id_projet INTEGER,
-    FOREIGN KEY (id_projet) REFERENCES projets(id)
+        id INTEGER PRIMARY KEY,
+        nom VARCHAR,
+        prénom VARCHAR,
+        fonction VARCHAR,
+        salaire INTEGER,
+        date_embauche VARCHAR,
+        id_projet INTEGER,
+        FOREIGN KEY (id_projet) REFERENCES projets(id)
     )""")
     c.execute("""
     CREATE TABLE congés_2023 (
@@ -64,6 +73,38 @@ def recréation_db():
         FOREIGN KEY (id_chef_projet) REFERENCES employés(id)
     )""")
     conn.commit()
+    
+def heure_de_bureau():
+    heures = random.randint(8,21)
+    minutes = random.randint(0,59)
+    secondes = random.randint(0,59)
+    if heures < 10:
+        heures = "0"+str(heures)
+    else:
+        heures = str(heures)
+    if minutes < 10:
+        minutes = "0"+str(minutes)
+    else:
+        minutes = str(minutes)
+    if secondes < 10:
+        secondes = "0"+str(secondes)
+    else:
+        secondes = str(secondes)
+    time = f"{heures}:{minutes}:{secondes}"
+    return time
+
+
+def caméras():
+    data = []
+    lieux = ["Bureau PDG","Open Space","Cour intérieure","Salle d'ordinateur quantique","Toilettes"]
+    actions = ["Sur l'ordinateur","En train de fumer","En train de faire des choses inavouables","Aux toilettes","En train de discuter","En train de se déplacer"]
+    for i in range(20000):
+        id_employé = random.randint(1,5000)
+        heure = heure_de_bureau()
+        lieu = random.choice(lieux)
+        action = random.choice(actions)
+        data.append([id_employé,heure,lieu,action])
+    return data
 
 def projets():
     projet1 = ["1","LinguaSync","Projet de LLM visant à améliorer la compréhension contextuelle dans les interactions langagières automatisées",
@@ -78,12 +119,13 @@ def projets():
                 "2015-09-07","806"]
     data = [projet1,projet2,projet3,projet4,projet5]
     return data
+
 def génération_badges():
     data = []
     lieux = ["Bureau PDG","Open Space","Cour intérieure","Salle d'ordinateur quantique"]
     for i in range(40000):
         date = str(fake.date_between(start_date="-1y", end_date='today'))
-        heure = fake.time()
+        heure = heure_de_bureau()
         date_heure_badge = date + f"|{heure}"
         lieu_badge = random.choice(lieux)
         type_badge = random.choice(["Entrée","Sortie"])
@@ -261,6 +303,10 @@ conn.commit()
 
 insert_query = "INSERT INTO projets(id_projet,nom_projet,description_projet,date_début,id_chef_projet) VALUES (?,?,?,?,?)"
 c.executemany(insert_query, projets())
+conn.commit()
+
+insert_query = "INSERT INTO reconnaissance_caméras_2023_04_01 (id_employé,heure,lieu,action) VALUES (?,?,?,?)"
+c.executemany(insert_query,caméras())
 conn.commit()
 
 conn.close()
