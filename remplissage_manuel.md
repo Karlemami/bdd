@@ -200,3 +200,76 @@ Il faudra rajouter quelques insultes dans les mails.
 On voit que le groupe d'employes etait a l'exterieur pendant le crime.
 
 A mettre en relation avec la table `videosurveillance` : les employes etaient dehors en pause clope, donc cela mene nulle part.
+
+### Les mails où les employés s'inquiètent : 
+
+**Mail 1:**
+
+Objet : Préoccupations concernant les récentes initiatives du PDG
+
+Cher collègue,
+
+Ces derniers temps, j'ai remarqué plusieurs signes qui me laissent perplexe quant aux intentions du PDG. Il semble qu'il y ait des discussions en coulisse concernant l'intégration d'une intelligence artificielle pour remplacer certains postes au sein de notre entreprise. Est-ce que quelqu'un d'autre a remarqué cela ?
+
+Je comprends que l'automatisation peut améliorer l'efficacité, mais je ressens une certaine inquiétude quant à l'impact sur nos emplois. Devrions-nous aborder ce sujet avec lui ou commencer à explorer nos options ?
+
+Cordialement,
+[Nom]
+
+
+**Mail 2:**
+
+Objet : Réunion étrange avec la direction
+
+Salut [Nom],
+
+As-tu entendu parler de la réunion sur l'« optimisation des processus » ? Ça semblait beaucoup tourner autour de l'automatisation et de l'efficacité. Ça m'a paru un peu suspect. Tu en penses quoi ?
+
+Amicalement,
+[Nom]
+
+**Mail 3:**
+
+Objet : Nouveau logiciel ?
+
+Karim,
+
+As-tu vu ce nouveau logiciel de gestion de projet que le PDG nous a demandé d'essayer ? Je trouve ça bizarre, il semble capable de faire pas mal de nos tâches habituelles. Un peu inquiétant, non ?
+
+A bientôt,
+[Nom]
+
+**Mail 4:**
+
+Objet : Disparition des postes administratifs ?
+
+Salut [Nom],
+
+Tu as remarqué que plusieurs postes admin ne sont pas remplacés après les départs ? J'ai l'impression que la direction pousse pour plus d'automatisation. Ça te semble plausible ?
+
+A bientôt,
+[Nom]
+
+**Mail 5:**
+
+Objet : Rumeurs sur les nouvelles technologies
+
+[Nom],
+
+J'ai entendu des rumeurs sur un gros investissement en tech. Ils parlent de "transformation numérique". Tu crois que ça pourrait affecter nos emplois ?
+
+Amicalement,
+[Nom]
+
+**Mail 6:**
+
+Objet : Changement de fournisseur IT
+
+[Nom],
+
+Le service IT a changé de fournisseur et ils parlent beaucoup d'intégration d'IA. Tu penses que ça pourrait signifier une automatisation plus large dans l'entreprise ?
+
+Bien à toi,
+[Nom]
+
+
