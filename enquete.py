@@ -137,25 +137,28 @@ def génération_congés():
     data = []
     ids_employés = list(range(5001))
     for i in range(5001):
-        date_départ_demandée = fake.date_between(start_date="-1y",end_date="today")
-        proba = random.randint(0,10)
-        if proba in [0,1,2,3,4,5,6,7,8]:
-            date_départ_accordée = date_départ_demandée
+        if i == 340:
+            data.append(["2023-01-04","2023-01-04","2023-02-04","2023-02-04",i])
         else:
-            date_départ_accordée = timedelta(days=random.randint(-10,10))
-            date_départ_accordée = date_départ_demandée + date_départ_accordée
-        temps_congé = random.randint(1,14)
-        temps_congé = timedelta(days=temps_congé)
-        date_retour_demandée = date_départ_demandée + temps_congé
-        date_retour_accordée = date_départ_accordée + temps_congé
-        id_employé = random.choice(ids_employés)
-        ids_employés.remove(id_employé)
-        data.append([date_départ_demandée,date_départ_accordée,date_retour_demandée,date_retour_accordée,id_employé])
+            date_départ_demandée = fake.date_between(start_date="-1y",end_date="today")
+            proba = random.randint(0,10)
+            if proba in [0,1,2,3,4,5,6,7,8]:
+                date_départ_accordée = date_départ_demandée
+            else:
+                date_départ_accordée = timedelta(days=random.randint(-10,10))
+                date_départ_accordée = date_départ_demandée + date_départ_accordée
+            temps_congé = random.randint(1,14)
+            temps_congé = timedelta(days=temps_congé)
+            date_retour_demandée = date_départ_demandée + temps_congé
+            date_retour_accordée = date_départ_accordée + temps_congé
+            id_employé = random.choice(ids_employés)
+            ids_employés.remove(id_employé)
+            data.append([date_départ_demandée,date_départ_accordée,date_retour_demandée,date_retour_accordée,id_employé])
     return data
 
 def génération_employés():
     data = [["1","Dubois","Jean","PDG","1000000","12/05/2011","NULL"]]
-    for i in range(2,5000):
+    for i in range(2,5001):
         if i == 340:
             data.append([i,"Coupable","John","Ingénieur TAL","2000","2012-04-01", "4"])
         elif i == 2000:
