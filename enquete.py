@@ -138,7 +138,7 @@ def génération_congés():
     ids_employés = list(range(5001))
     for i in range(5001):
         if i == 340:
-            data.append(["2023-01-04","2023-01-04","2023-02-04","2023-02-04",i])
+            data.append(["2023-04-01","2023-04-01","2023-04-02","2023-04-02",i])
         else:
             date_départ_demandée = fake.date_between(start_date="-1y",end_date="today")
             proba = random.randint(0,10)
