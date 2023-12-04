@@ -10,7 +10,7 @@ class Mail:
 
     def find_regex_in_mails(self, expr, path="mails_trouves.txt"):
         if re.search(expr, self.text):
-            write_in_file(f"\nOccurrence trouvee dans le mail suivant :\n {self.text}", path)
+            write_in_file(f"\nOccurrence trouvée dans le mail suivant :\n {self.text}\n\n", path)
             write_in_file(f"\nL'objet du mail est : {self.subject}\n", path)
             write_in_file(f"\nL'id de l'expediteur est : {self.id_exp}\n", path)
             write_in_file(f"\nL'id du destinataire est : {self.id_dest}\n", path)
