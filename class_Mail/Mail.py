@@ -24,12 +24,18 @@ class Mail:
         occ.append(re.findall(expr, self.subject))
         return occ
 
-    def print_when_expr_found(self, expr):
+    def find_regex_in_mails(self, expr):
         if re.search(expr, self.text):
-            print(f"\nOccurrence trouvée dans le mail suivant : \n{self.text}")
-            print(f"\nL'id de l'expéditeur est : {self.id_exp}\n")
-            print(f"\nL'objet du mail est : {self.subject}\n")
+            write_in_file(f"\nOccurrence trouvee dans le mail suivant :\n {self.text}")
+            write_in_file(f"\nL'objet du mail est : {self.subject}\n")
+            write_in_file(f"\nL'id de l'expediteur est : {self.id_exp}\n")
+            write_in_file(f"\nL'id du destinataire est : {self.id_dest}\n")
         return True
+
+
+def write_in_file(text, path="mails_trouves.txt"):
+    with open(path, "a") as file:
+        file.write(text)
 
 
 # On veut creer a la fin une liste d'objets "mail"
