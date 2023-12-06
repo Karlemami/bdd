@@ -13,8 +13,8 @@ def main():
         mail = Mail(line)
         regex_boss = "(PDG|[Bb]oss|[Pp]atron|Jean Dubois)"
         regex_project = "((projet)?[tT]itan[aA][iI])"
-        mail.find_regex_in_mails(regex_boss, "mails_boss.txt")
-        mail.find_regex_in_mails(regex_project, "mails_project.txt")
+        mail.find_regex_in_mails(regex_boss, "mails_boss.md")
+        mail.find_regex_in_mails(regex_project, "mails_project.md")
 
 
 main()
