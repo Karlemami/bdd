@@ -1,34 +1,6 @@
 ## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
  
 
-**<span style='color: #d47f10;'><br> Objet : </span>** Progression des tests pour TitanAI
-
-
-Chers membres de l'équipe,
-
-Comment avancent les tests en situation réelle pour les IA ? Y a-t-il des domaines où nous constatons des succès particuliers ou des limitations significatives ? J'aimerais être informé des progrès actuels.
-
-Cordialement,
-
-**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 1
-**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 340
-## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
- 
-
-**<span style='color: #d47f10;'><br> Objet : </span>** Planification des prochaines étapes pour TitanAI
-
-
-Chers collaborateurs,
-
-Je suis en train de rédiger le plan pour les prochaines étapes de développement de TitanAI. Si vous avez des suggestions ou des recommandations pour cette phase, n'hésitez pas à m'en faire part afin que nous puissions les intégrer.
-
-Cordialement,
-
-**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 1
-**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 728
-## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
- 
-
 **<span style='color: #d47f10;'><br> Objet : </span>** Questionnements sur l'orientation de TitanAI
 
 
@@ -72,34 +44,6 @@ Cordialement,
 ## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
  
 
-**<span style='color: #d47f10;'><br> Objet : </span>** TitanAI : Analyse des retours
-
-
-Chers collaborateurs,
-
-N'oubliez pas d'analyser les retours des utilisateurs ou des tests de nos IA. Leur convivialité et leur efficacité sont tout aussi cruciales que leurs performances brutes. Faites-moi part des observations et des suggestions d'amélioration.
-
-Cordialement,
-
-**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 1
-**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 3789
-## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
- 
-
-**<span style='color: #d47f10;'><br> Objet : </span>** TitanAI : Benchmarks de l'industrie
-
-
-Chers collègues,
-
-Avez-vous examiné les benchmarks de l'industrie concernant l'adoption des IA pour des tâches similaires ? Des entreprises concurrentes ont-elles réussi à intégrer efficacement ces technologies ? Veuillez partager vos conclusions.
-
-Cordialement,
-
-**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 1
-**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 2309
-## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
- 
-
 **<span style='color: #d47f10;'><br> Objet : </span>** Doutes concernant TitanAI
 
 
@@ -109,8 +53,8 @@ Je suis partagé entre l'enthousiasme pour l'avancée du projet TitanAI et une c
 
 Bien à vous,
 
-**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 2309
-**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 3789
+**<span style='color: #d47f10;'><br>L'id de l'expediteur est : </span>** 3789
+**<span style='color: #d47f10;'><br>L'id du destinataire est : </span>** 2309
 ## <span style='color: orange;'><br> Occurrence trouvée dans le mail suivant :</span>
  
 

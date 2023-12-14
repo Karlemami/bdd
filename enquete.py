@@ -98,11 +98,9 @@ def heure_de_bureau():
 def caméras():
     data = []
     data.append(["728","14:58:54","Cour intérieure","En train de fumer"])
-    data.append(["2309","14:58:20","Cour intérieure","En train de fumer"])
-    data.append(["3789","14:58:58","Cour intérieure","En train de fumer"])
+    data.append(["2309","14:32:20","En salle de réunion","En train de brainstormer"])
+    data.append(["3789","14:16:58","Open Space","En train de travailler"])
     data.append(["728","15:10:34","Open Space","Sur l'ordinateur"])
-    data.append(["2309","15:11:07","Open Space","Sur l'ordinateur"])
-    data.append(["3789","15:11:02","Open Space","Sur l'ordinateur"])
     lieux = ["Bureau PDG","Open Space","Cour intérieure","Salle d'ordinateur quantique","Toilettes"]
     actions = ["Sur l'ordinateur","En train de fumer","En train de faire des choses inavouables","Aux toilettes","En train de discuter","En train de se déplacer"]
     for i in range(20000):
@@ -132,11 +130,9 @@ def projets():
 def génération_badges():
     data = []
     data.append(["2023-04-01|14:58:12","Cour intérieure","Sortie","728"])
-    data.append(["2023-04-01|14:58:28","Cour intérieure","Sortie","2309"])
-    data.append(["2023-04-01|14:58:01","Cour intérieure","Sortie","3789"])
-    data.append(["2023-04-01|15:09:28","Open Space","Entrée","728"])
-    data.append(["2023-04-01|15:09:35","Open Space","Entrée","2309"])
-    data.append(["2023-04-01|15:09:42","Open Space","Entrée","3789"])
+    data.append(["2023-04-01|14:30:28","Salle de réunion","Entrée","2309"])
+    data.append(["2023-04-01|14:12:38","Open Space","Entrée","3789"])
+    data.append(["2023-04-01|15:09:37","Open Space","Entrée","728"])
     lieux = ["Bureau PDG","Open Space","Cour intérieure","Salle d'ordinateur quantique"]
     for i in range(40000):
         date = str(fake.date_between(start_date="-1y", end_date='today'))
@@ -176,25 +172,25 @@ def génération_employés():
     data = [["1","Dubois","Jean","PDG","1000000","12/05/2011","NULL"]]
     for i in range(2,5001):
         if i == 340:
-            data.append([i,"Coupable","John","Ingénieur TAL","2000","2012-04-01", "4"])
+            data.append([i,"Coupable","Jean","Ingénieur TAL","12830","2012-04-01", "4"])
         elif i == 2000:
-            data.append([i, "Philippe","Ashley","Développeur","7000","1998-11-24", "4"])
+            data.append([i, "Philippe","Ashley","Développeur","10573","1998-11-24", "4"])
         elif i == 1784:
-            data.append([i, "Fleith","Florian","Employé polyvalent","10000","2001-03-12", "4"])
+            data.append([i, "Fleith","Florian","Employé polyvalent","10089","2001-03-12", "4"])
         elif i == 4504:
-            data.append([i, "Ratier","Valentine","Ingénieur TAL","15000","2001-07-06", "4"])
+            data.append([i, "Ratier","Valentine","Ingénieur TAL","15007","2001-07-06", "4"])
         elif i == 728:
-            data.append([i, "Dengrot","Drécic","Speech Analyst","70000","2022-09-18", "4"])
+            data.append([i, "Dengrot","Drécic","Speech Analyst","19848","2022-09-18", "4"])
         elif i == 3809:
-            data.append([i, "Outan","Laurent","Chef de projet","150000","2013-07-30", "4"])
+            data.append([i, "Mariotte","Laurent","Chef de projet","25203","2013-07-30", "4"])
         elif i == 3789:
-            data.append([i,"Mariotte","Laurent","Développeur","6500","1994-08-24", "4"])
+            data.append([i,"Outan","Laurent","Développeur","14759","1994-08-24", "4"])
         elif i == 2309:
-            data.append([i, "Dupont","Pierre","Ingénieur TAL","7800","2003-05-30", "4"])
+            data.append([i, "Dupont","Pierre","Ingénieur TAL","12304","2003-05-30", "4"])
         elif i == 3975:
-            data.append([i,"Tuillier","Emma","Développeur","9000","1999-12-13", "4"])
+            data.append([i,"Tuillier","Emma","Développeur","12548","1999-12-13", "4"])
         elif i == 18:
-            data.append([i, "Lemaire","Amandine","Experte en ML","10000","2004-10-23", "4"])
+            data.append([i, "Lemaire","Amandine","Experte en ML","10012","2004-10-23", "4"])
         else:
             prénom = fake.first_name()
             nom = fake.last_name()
@@ -230,27 +226,27 @@ def génération_mails():
 #MAILS SUSPECTS INSULTANTS PDG : 
 
     for i in range(0,40000):
-        if i == 452:
-            data.append(["2023-03-24|15:18:12",
-                            "Hey,\n\nT'as vu les dernières conneries de notre PDG dans le domaine du machine learning et du NLP ? C'est du grand n'importe quoi il est trop con. On dirait qu'il a découvert ces termes hier. T'as des idées pour remédier à cette catastrophe ?\n\nÀ plus\n",
-                            "Dérapage du Boss",
-                            "340",
-                            "18"])
-        elif i == 8963:
-            data.append(["2023-02-14|12:25:12",
-                            "Salut,\n\nJ'en peux plus des choix du PDG en machine learning. Sérieux, on dirait qu'il a tiré ses idées d'un livre de 2005. T'as remarqué, non ? On devrait lui envoyer un manuel de mise à jour.\n\nÀ discuter,\n",
-                            "Ras-le-bol du Chef",
-                            "340",
-                            "728"])
-        elif i == 8:
+        # if i == 452:
+        #     data.append(["2023-03-24|15:18:12",
+        #                     "Hey,\n\nT'as vu les dernières conneries de notre PDG dans le domaine du machine learning et du NLP ? C'est du grand n'importe quoi il est trop con. On dirait qu'il a découvert ces termes hier. T'as des idées pour remédier à cette catastrophe ?\n\nÀ plus\n",
+        #                     "Dérapage du Boss",
+        #                     "340",
+        #                     "18"])
+        # elif i == 8963:
+        #     data.append(["2023-02-14|12:25:12",
+        #                     "Salut,\n\nJ'en peux plus des choix du PDG en machine learning. Sérieux, on dirait qu'il a tiré ses idées d'un livre de 2005. T'as remarqué, non ? On devrait lui envoyer un manuel de mise à jour.\n\nÀ discuter,\n",
+        #                     "Ras-le-bol du Chef",
+        #                     "340",
+        #                     "728"])
+        if i == 8:
             data.append(["2023-03-14|12:25:12",
-                            "Salut,\nJ'ai eu du mal à m'adapter au ton du PDG ces derniers temps. Il semble naviguer entre des périodes d'indifférence totale et d'explosions inattendues. Peut-être qu'une approche plus constante serait bénéfique pour tout le monde.\n\nÀ réfléchir ensemble,\n",
+                            "Salut,\nJ'ai eu du mal à m'adapter au ton du PDG ces derniers temps. Il semble naviguer entre des périodes d'indifférence totale et d'explosions inattendues. Il joue vraiment au con. Peut-être qu'une approche plus constante serait bénéfique pour tout le monde.\n\nÀ réfléchir ensemble,\n",
                             "Les nuances de la personnalité du PDG",
                             "728",
                             "3789"])
         elif i == 39980:
             data.append(["2023-03-11|08:14:19",
-                            "Salut,\nJe n'en peux vraiment plus de ce connard de boss. Il travaille sur TitanAI tout le temps, à croire qu'il cherche à nous remplacer. Je pense qu'il serait grand temps que quelqu'un se débarasse de lui, qu'en penses-tu ?\n\nBien cordialement,\n",
+                            "Salut,\nJe n'en peux vraiment plus de ce connard de boss. C'est devenu évident qu'il cherche à nous remplacer. Je pense qu'il serait grand temps que quelqu'un se débarasse de lui, qu'en penses-tu ?\n\nBien cordialement,\n",
                             "Une idée en l'air...",
                             "340",
                             "3789"])
@@ -262,28 +258,28 @@ def génération_mails():
                             "3789"])
         elif i == 122:
             data.append(["2023-03-12|04:25:36",
-                            "Hey,\n\nJ'ai l'impression que le PDG est tellement passionné par le machine learning qu'il en oublie parfois le reste de l'équipe. Tu crois qu'on pourrait lui organiser une petite pause décontractée pour qu'il se reconnecte avec le monde réel ?\n\nÀ la recherche d'équilibre,\n",
-                            "La passion débordante du PDG",
-                            "728",
-                            "2309"])
+                            "Hey,\n\nJ'ai l'impression que le patron est tellement passionné par le machine learning qu'il en oublie parfois le reste de l'équipe. Tu crois qu'on pourrait lui remettre les idées en place ? Il faut le reconnecter au monde réel ?\n\nÀ méditer.........,\n",
+                            "Dubois la tête dans les nuages",
+                            "2309",
+                            "728"])
         elif i == 2768:
             data.append(["2023-02-15|17:34:07",
-                            "Cher collègue,\n\nCes derniers temps, j'ai remarqué plusieurs signes qui me laissent perplexe quant aux intentions du PDG. Il semble qu'il y ait des discussions en coulisse concernant l'intégration d'une intelligence artificielle pour remplacer certains postes au sein de notre entreprise. Est-ce que quelqu'un d'autre a remarqué cela ?\nJe comprends que l'automatisation peut améliorer l'efficacité, mais je ressens une certaine inquiétude quant à l'impact sur nos emplois. Devrions-nous aborder ce sujet avec lui ou commencer à explorer nos options ?\n\nCordialement.\n",
-                            "Préoccupations concernant les récentes initiatives du PDG",
+                            "Salut,\n Tu veux qu'on aille manger ensemble ce midi ? Il faut que je te parle de Dubois, j'en peux vraiment plus de cet abruti...\n\nÀ plus.\n",
+                            "Lunch ensemble ?",
                             "3789",
-                            "728"])
+                            "2309"])
         elif i == 126:
             data.append(["2023-01-15|12:49:32",
                             "Salut,\n\nAs-tu entendu parler de la réunion sur l' 'optimisation des processus' ? Ça semblait beaucoup tourner autour de l'automatisation et de l'efficacité. Ça m'a paru un peu suspect. Tu en penses quoi ?\n\nAmicalement,\n",
                             "Réunion étrange",
                             "3789",
                             "2309"])
-        elif i == 714:
-            data.append(["2023-01-27|08:49:17",
-                            "Hey,\n\nAs-tu vu ce nouveau logiciel de gestion de projet que le PDG nous a demandé d'essayer ? Je trouve ça bizarre, il semble capable de faire pas mal de nos tâches habituelles. Un peu inquiétant, non ? J'ai l'impression de plus servir à grand chose, pas toi ?\n\nA bientôt,\n",
-                            "Disparition des postes administratifs ?",
-                            "2309",
-                            "728"])
+        # elif i == 714:
+        #     data.append(["2023-01-27|08:49:17",
+        #                     "Hey,\n\nAs-tu vu ce nouveau logiciel de gestion de projet que le PDG nous a demandé d'essayer ? Je trouve ça bizarre, il semble capable de faire pas mal de nos tâches habituelles. Un peu inquiétant, non ? J'ai l'impression de plus servir à grand chose, pas toi ?\n\nA bientôt,\n",
+        #                     "Disparition des postes administratifs ?",
+        #                     "2309",
+        #                     "728"])
         elif i == 4000:
             data.append(["2023-03-02|06:12:42",
                             "Salut,\n\nJ'ai entendu des rumeurs sur un gros investissement en tech. Ils parlent de \"transformation numérique\". Tu crois que ça pourrait affecter nos emplois ?\n\nAmicalement,\n",
@@ -310,7 +306,7 @@ def génération_mails():
                             "3789"])
         elif i == 25000:
             data.append(["2023-01-27|15:02:38",
-                            "Cher collègue,\n\nÇa me rend fou de voir comment on se fait manipuler ! Ce projet d'IA, c'est juste un outil pour le PDG pour nous remplacer. On doit se réveiller avant qu'il ne soit trop tard. Si personne ne réagit, je vais m'en charger personnellement !!\n\nA réfléchir d'urgence.\n",
+                            "Cher collègue,\n\nÇa me rend fou de voir comment on se fait manipuler ! Ce projet d'IA, c'est juste un outil pour Dubois pour nous remplacer. On doit se réveiller avant qu'il ne soit trop tard. Si personne ne réagit, je vais m'en charger personnellement !!\n\nA réfléchir d'urgence.\n",
                             "Trahison et Mensonges - Il est temps de réagir !",
                             "340",
                             "3789"])
@@ -334,7 +330,7 @@ def génération_mails():
                             "3789"])
         elif i == 701:
             data.append(["2023-02-18|04:19:59",
-                            "Hey,\n\nOn nous a trahis ! Ce projet d'IA, c'est juste un moyen sournois pour le PDG de nous remplacer. C'est un coup bas, et je refuse de rester les bras croisés. On doit faire quelque chose sinon je ne sais pas ce dont je serai capable !\n\nRévolté.\n",
+                            "Hey,\n\nOn nous a trahis ! Ce projet d'IA, c'est juste un moyen pour cet enfoiré de Dubois de nous remplacer. C'est un coup bas, et je refuse de rester les bras croisés. On doit faire quelque chose sinon je ne sais pas ce dont je serai capable !\n\nRévolté.\n",
                             "Action immédiate requise contre le plan caché du PDG !",
                             "340",
                             "728"])
@@ -371,8 +367,8 @@ def génération_mails():
             data.append(["2023-01-23|15:13:39",
                             "Chers collaborateurs,\n\nJe suis partagé entre l'enthousiasme pour l'avancée du projet TitanAI et une certaine inquiétude quant à ses implications à long terme. J'espère vraiment que nos rôles ne seront pas sacrifiés au profit de cette automatisation.\n\nBien à vous,",
                             "Doutes concernant TitanAI",
-                            "2309",
-                            "3789"])
+                            "3789",
+                            "2309"])
 
 ## MAILS NORMAUX ENTRE MEMBRES DU PROJET : 
 
@@ -389,12 +385,12 @@ def génération_mails():
                             "Remarques sur la phase de test de TitanAI",
                             "340",
                             "728"])
-        elif i == 19:
-            data.append(["2023-02-12|14:22:39",
-                            "Chers collaborateurs,\n\nJe suis en train de rédiger le plan pour les prochaines étapes de développement de TitanAI. Si vous avez des suggestions ou des recommandations pour cette phase, n'hésitez pas à m'en faire part afin que nous puissions les intégrer.\n\nCordialement,",
-                            "Planification des prochaines étapes pour TitanAI",
-                            "1",
-                            "728"])
+        # elif i == 19:
+        #     data.append(["2023-02-12|14:22:39",
+        #                     "Chers collaborateurs,\n\nJe suis en train de rédiger le plan pour les prochaines étapes de développement de TitanAI. Si vous avez des suggestions ou des recommandations pour cette phase, n'hésitez pas à m'en faire part afin que nous puissions les intégrer.\n\nCordialement,",
+        #                     "Planification des prochaines étapes pour TitanAI",
+        #                     "1",
+        #                     "728"])
 ##MAILS PDG INQUIET : 
 
         # elif i == 1329:
@@ -415,24 +411,24 @@ def génération_mails():
                             "TitanAI : Étude comparative des coûts",
                             "1",
                             "728"])
-        elif i == 1526:
-            data.append(["2023-03-15|11:05:00",
-                            "Chers collègues,\n\nAvez-vous examiné les benchmarks de l'industrie concernant l'adoption des IA pour des tâches similaires ? Des entreprises concurrentes ont-elles réussi à intégrer efficacement ces technologies ? Veuillez partager vos conclusions.\n\nCordialement,",
-                            "TitanAI : Benchmarks de l'industrie",
-                            "1",
-                            "2309"])
-        elif i == 12:
-            data.append(["2023-02-25|16:18:00",
-                            "Chers membres de l'équipe,\n\nComment avancent les tests en situation réelle pour les IA ? Y a-t-il des domaines où nous constatons des succès particuliers ou des limitations significatives ? J'aimerais être informé des progrès actuels.\n\nCordialement,",
-                            "Progression des tests pour TitanAI",
-                            "1",
-                            "340"])
-        elif i == 1365:
-            data.append(["2023-03-22|08:47:00",
-                            "Chers collaborateurs,\n\nN'oubliez pas d'analyser les retours des utilisateurs ou des tests de nos IA. Leur convivialité et leur efficacité sont tout aussi cruciales que leurs performances brutes. Faites-moi part des observations et des suggestions d'amélioration.\n\nCordialement,",
-                            "TitanAI : Analyse des retours",
-                            "1",
-                            "3789"])
+        # elif i == 1526:
+        #     data.append(["2023-03-15|11:05:00",
+        #                     "Chers collègues,\n\nAvez-vous examiné les benchmarks de l'industrie concernant l'adoption des IA pour des tâches similaires ? Des entreprises concurrentes ont-elles réussi à intégrer efficacement ces technologies ? Veuillez partager vos conclusions.\n\nCordialement,",
+        #                     "TitanAI : Benchmarks de l'industrie",
+        #                     "1",
+        #                     "2309"])
+        # elif i == 12:
+        #     data.append(["2023-02-25|16:18:00",
+        #                     "Chers membres de l'équipe,\n\nComment avancent les tests en situation réelle pour les IA ? Y a-t-il des domaines où nous constatons des succès particuliers ou des limitations significatives ? J'aimerais être informé des progrès actuels.\n\nCordialement,",
+        #                     "Progression des tests pour TitanAI",
+        #                     "1",
+        #                     "340"])
+        # elif i == 1365:
+        #     data.append(["2023-03-22|08:47:00",
+        #                     "Chers collaborateurs,\n\nN'oubliez pas d'analyser les retours des utilisateurs ou des tests de nos IA. Leur convivialité et leur efficacité sont tout aussi cruciales que leurs performances brutes. Faites-moi part des observations et des suggestions d'amélioration.\n\nCordialement,",
+        #                     "TitanAI : Analyse des retours",
+        #                     "1",
+        #                     "3789"])
         # elif i == 1828:
         #     data.append(["2023-01-17|15:30:00",
         #                     "Chers membres de l'équipe,\n\nPlanifions des consultations avec les départements clés pour comprendre leurs besoins spécifiques. Cette interaction directe nous aidera à adapter les IA en conséquence. Organisez ces réunions dès que possible.\n\nCordialement,",
@@ -455,8 +451,8 @@ def génération_mails():
             date = str(fake.date_between(start_date="-1y", end_date='today'))
             time = fake.time()
             date += f"|{time}"
-            id_expéditeur = random.randint(1,1000)
-            id_destinataire = random.randint(1,1000)
+            id_expéditeur = random.randint(1,5000)
+            id_destinataire = random.randint(1,5000)
             texte = random.choice(ouverture)
             texte += fake.text()
             texte += random.choice(fermeture)
