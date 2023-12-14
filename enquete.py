@@ -129,10 +129,10 @@ def projets():
 
 def génération_badges():
     data = []
-    data.append(["2023-04-01|14:58:12","Cour intérieure","Sortie","728"])
-    data.append(["2023-04-01|14:30:28","Salle de réunion","Entrée","2309"])
-    data.append(["2023-04-01|14:12:38","Open Space","Entrée","3789"])
-    data.append(["2023-04-01|15:09:37","Open Space","Entrée","728"])
+    data.append(["2023-12-14|14:58:12","Cour intérieure","Sortie","728"])
+    data.append(["2023-12-14|14:30:28","Salle de réunion","Entrée","2309"])
+    data.append(["2023-12-14|14:12:38","Open Space","Entrée","3789"])
+    data.append(["2023-12-14|15:09:37","Open Space","Entrée","728"])
     lieux = ["Bureau PDG","Open Space","Cour intérieure","Salle d'ordinateur quantique"]
     for i in range(40000):
         date = str(fake.date_between(start_date="-1y", end_date='today'))
@@ -149,7 +149,7 @@ def génération_badges():
 def génération_congés():
     data = []
     ids_employés = list(range(5001))
-    data.append(["2023-04-01","2023-04-01","2023-04-02","2023-04-02","340"])
+    data.append(["2023-12-14","2023-12-14","2023-12-15","2023-12-15","340"])
     ids_employés.remove(340)
     for i in ids_employés:
         date_départ_demandée = fake.date_between(start_date="-1y",end_date="today")

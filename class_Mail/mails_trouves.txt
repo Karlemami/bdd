@@ -1,8 +1,0 @@
-
-Occurrence trouvee dans le mail suivant :
- Bonjour PDG Au revoir PDG
-L'objet du mail est : Reunion
-
-L'id de l'expediteur est : 4
-
-L'id du destinataire est : 7
